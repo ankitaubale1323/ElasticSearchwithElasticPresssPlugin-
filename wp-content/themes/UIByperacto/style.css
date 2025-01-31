@@ -1,0 +1,302 @@
+/*
+Theme Name: UIByperacto
+Theme URI: https://example.com/
+Author: Your Name
+Author URI: https://example.com/
+Description: A custom theme for UIByperacto with a hero section, blog, gallery, and contact form.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-background, custom-logo, custom-menu
+Text Domain: uibyperacto
+*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header container */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Logo styling */
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Menu styling */
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-menu li {
+    display: inline;
+}
+
+.horizontal-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.horizontal-menu a:hover {
+    color: #0073aa;
+}
+
+
+
+/* Hero Section (Homepage) */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #ffae00;
+}
+
+/* About Section */
+.about {
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Blog Page */
+.blog-page {
+    padding: 3rem;
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.5rem;
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.archive-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+/* Single Post Page */
+.single-post-title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #333;
+}
+
+.single-post-content {
+    line-height: 1.7;
+    margin-top: 1.5rem;
+}
+
+.single-post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Gallery Page */
+.gallery {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Page */
+.contact-form {
+    padding: 3rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Search Bar Container */
+.search-bar {
+    margin-left: 20px; /* Adjust space from the menu */
+}
+
+/* Style the search form */
+.search-bar form {
+    display: flex;
+}
+
+/* Style the search input */
+.search-bar input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    outline: none;
+}
+
+/* Style the search button */
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.search-bar button:hover {
+    background-color: #005580;
+}
+
+.highlight {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
