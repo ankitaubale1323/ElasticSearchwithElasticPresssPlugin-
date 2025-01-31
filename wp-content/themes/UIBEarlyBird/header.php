@@ -11,7 +11,7 @@
     <div class="container header-content">
         <!-- Logo -->
         <div class="logo">
-            <a href="<?php echo home_url(); ?>">Peracto</a>
+            <a href="<?php echo home_url(); ?>">ElasticSearch</a>
         </div>
 
         <!-- Navigation Menu -->
